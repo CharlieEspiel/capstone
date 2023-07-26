@@ -18,8 +18,8 @@ export default function About() {
         setOpen((cur) => !cur);
     };
     return (
-        <section className={`relative p-3 py-10 md:p-10 mx-3 xl:mx-auto h-3/4 pb-12 max-w-5xl rounded-lg shadow-md backdrop-blur-sm bg-[#fafafa20]`}>
-            <Typography variant="h1" className="text-[40px] text-center text-[#FAFAFA] md:mb-5">ABOUT US</Typography>
+        <section className="max-w-7xl mx-auto my-20">
+            <Typography variant="h2" className="mb-2 font-black tracking-normal text-[40px] text-center text-primary md:mb-5">About <span className="text-main">Us</span></Typography>
             <Fragment>
                 <Accordion open={alwaysOpen}>
                     <AccordionHeader onClick={handleAlwaysOpen}>

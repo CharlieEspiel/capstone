@@ -12,8 +12,8 @@ export default function Branches() {
     return (
         // <section className={`relative p-5 md:p-10 mx-5 lg:mx-auto md:pt-10 h-3/4  max-w-5xl rounded-lg shadow-md   shadow-gray-600`}>
 
-        <section id="branch" className={`flex flex-col max-w-7xl h-full pt-16 p-3 backdrop-blur-sm shadow-2xl md:mt-20 pb-10 bg-[#fafafa50] md:pt-24 rounded-lg mx-3 2xl:mx-auto`}>
-            <Typography variant="h1" className="text-[40px] text-center pb-10 text-[#fafafa]">BRANCHES</Typography>
+        <section className="max-w-7xl mx-auto py-10" id="branches">
+            <Typography variant="h1" className="text-[40px] text-center py-10 text-main mb-2 font-black tracking-normal"><span className="text-primary">Our </span>Branches</Typography>
             <div className="flex flex-wrap items-center justify-center w-full gap-10">
                 <Card className="max-w-[22rem] overflow-hidden bg-[#00000010] shadow backdrop-blur-sm">
                     <CardHeader

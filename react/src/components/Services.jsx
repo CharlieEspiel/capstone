@@ -14,7 +14,10 @@ export default function Services() {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     return (
         <section id="services" className={`max-w-7xl mx-auto flex flex-col p-3 pt-20 md:pt-14 h-full py-10`}>
-            <Typography variant="h1" className="text-[40px] text-[#AC0C2E] text-center my-10">SERVICES</Typography>
+             <Typography
+                        as="span"
+                        variant="h2"
+                        className="inline-block font-black tracking-normaltext-[40px] text-main text-center my-10"><span className="text-primary">Our </span>Services</Typography>
             <div className="flex flex-wrap items-center justify-center w-full gap-10">
                 <Card className="md:w-[45%] p-5">
                     <Accordion open={open === 1}>
