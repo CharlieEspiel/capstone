@@ -33,7 +33,7 @@ export default function Reviews() {
                 </Typography>
             </div>
             <div className="flex flex-col flex-wrap md:flex-row max-w-7xl mx-auto items-center justify-center h-max gap-5">
-            <Card className="group mt-6 w-96 hover:bg-primary/50 transition ease-in-out delay-100 duration-150">
+            <Card className="group mt-6 w-96 hover:bg-main/50 transition ease-in-out delay-100 duration-150">
                     <CardHeader color="blue-gray" className="relative h-56">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -51,10 +51,10 @@ export default function Reviews() {
                         </Typography>
                     </CardBody>
                     <CardFooter className="pt-0">
-                        <Rating value={4} readonly />
+                        <Rating value={4} readonly unratedColor="red" ratedColor="red" />
                     </CardFooter>
                 </Card>
-                <Card className="group mt-6 w-96 hover:bg-primary/50 transition ease-in-out delay-100 duration-150">
+                <Card className="group mt-6 w-96 hover:bg-main/50 transition ease-in-out delay-100 duration-150">
                     <CardHeader color="blue-gray" className="relative h-56">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -72,10 +72,10 @@ export default function Reviews() {
                         </Typography>
                     </CardBody>
                     <CardFooter className="pt-0">
-                    <Rating value={4} readonly />
+                    <Rating value={4} readonly unratedColor="red" ratedColor="red" />
                     </CardFooter>
                 </Card>
-                <Card className="group mt-6 w-96 hover:bg-primary/50 transition ease-in-out delay-100 duration-150">
+                <Card className="group mt-6 w-96 hover:bg-main/50 transition ease-in-out delay-100 duration-150">
                     <CardHeader color="blue-gray" className="relative h-56">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -93,7 +93,7 @@ export default function Reviews() {
                         </Typography>
                     </CardBody>
                     <CardFooter className="pt-0">
-                    <Rating value={5} readonly />
+                    <Rating value={5} readonly unratedColor="red" ratedColor="red"/>
                     </CardFooter>
                 </Card>
             </div>
