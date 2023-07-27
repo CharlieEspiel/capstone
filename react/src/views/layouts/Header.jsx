@@ -31,6 +31,7 @@ export default function Header() {
                     onClick={() => {
                         setActive('');
                         window.scrollTo(0, 0)
+                        
                     }}>
                     Home
                 </a>

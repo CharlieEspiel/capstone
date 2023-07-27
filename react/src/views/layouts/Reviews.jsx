@@ -33,7 +33,7 @@ export default function Reviews() {
                 </Typography>
             </div>
             <div className="flex flex-col flex-wrap md:flex-row max-w-7xl mx-auto items-center justify-center h-max gap-5">
-                <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition ease-in-out delay-100 duration-150">
+            <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition-all ease-in-out delay-100 duration-200 hover:scale-105 cursor-pointer">
                     <CardHeader color="blue-gray" onBlur={100} className="relative h-full">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -55,7 +55,7 @@ export default function Reviews() {
                         <Rating value={4} readonly unratedColor="red" ratedColor="red" />
                     </CardFooter>
                 </Card>
-                <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition ease-in-out delay-100 duration-150">
+                <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition-all ease-in-out delay-75 duration-200 hover:scale-105 cursor-pointer">
                     <CardHeader color="blue-gray" onBlur={100} className="relative h-full">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -77,7 +77,7 @@ export default function Reviews() {
                         <Rating value={4} readonly unratedColor="red" ratedColor="red" />
                     </CardFooter>
                 </Card>
-                <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition ease-in-out delay-100 duration-150">
+                <Card className="group mt-6 max-w-[22rem] hover:bg-subscribe transition-all ease-in-out delay-75 duration-200 hover:scale-105 cursor-pointer">
                     <CardHeader color="blue-gray" onBlur={100} className="relative h-full">
                         <img
                             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"

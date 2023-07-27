@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { motion } from "framer-motion"
 import {
     Typography,
@@ -9,16 +9,13 @@ import {
 
 // About Us section with animated image and expandable accordions
 export default function About() {
-    const [open, setOpen] = useState(0);
-    const [alwaysOpen, setAlwaysOpen] = useState(true);
+    const [openAcc1, setOpenAcc1] = React.useState(true);
+    const [openAcc2, setOpenAcc2] = React.useState(true);
+    const [openAcc3, setOpenAcc3] = React.useState(true);
 
-    const handleOpen = (value) => {
-        setOpen(open === value ? 0 : value);
-    };
-
-    const handleAlwaysOpen = () => {
-        setOpen((cur) => !cur);
-    };
+    const handleOpenAcc1 = () => setOpenAcc1((cur) => !cur);
+    const handleOpenAcc2 = () => setOpenAcc2((cur) => !cur);
+    const handleOpenAcc3 = () => setOpenAcc3((cur) => !cur);
 
     return (
         <section className="block max-w-7xl mx-auto my-20">
@@ -46,8 +43,8 @@ export default function About() {
                 <div className="w-full md:w-2/3 p-3">
                     <Fragment>
                         {/* First Accordion */}
-                        <Accordion open={alwaysOpen}>
-                            <AccordionHeader onClick={handleAlwaysOpen}>
+                        <Accordion open={openAcc1}>
+                            <AccordionHeader onClick={handleOpenAcc1}>
                                 What is Material Tailwind?
                             </AccordionHeader>
                             <AccordionBody>
@@ -56,8 +53,8 @@ export default function About() {
                         </Accordion>
 
                         {/* Second Accordion */}
-                        <Accordion open={open === 1}>
-                            <AccordionHeader onClick={() => handleOpen(1)}>
+                        <Accordion open={openAcc2}>
+                            <AccordionHeader onClick={handleOpenAcc2}>
                                 How to use Material Tailwind?
                             </AccordionHeader>
                             <AccordionBody>
@@ -66,8 +63,8 @@ export default function About() {
                         </Accordion>
 
                         {/* Third Accordion */}
-                        <Accordion open={open === 2}>
-                            <AccordionHeader onClick={() => handleOpen(2)}>
+                        <Accordion open={openAcc3}>
+                            <AccordionHeader onClick={handleOpenAcc3}>
                                 What can I do with Material Tailwind?
                             </AccordionHeader>
                             <AccordionBody>
