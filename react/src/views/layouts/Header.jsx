@@ -22,7 +22,7 @@ export default function Header() {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                variant="small"
+                variant="h6"
 
                 className="p-1 text-primary text-[15px]"
             >
@@ -38,7 +38,7 @@ export default function Header() {
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="h6"
                 className="p-1 text-primary text-[15px]"
             >
                 <a href="#about" className="flex items-center">
@@ -47,7 +47,7 @@ export default function Header() {
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="h6"
                 className="p-1 text-primary text-[15px]"
             >
                 <a href="#branches" className="flex items-center">
@@ -56,7 +56,7 @@ export default function Header() {
             </Typography>
             <Typography
                 as="li"
-                variant="small"
+                variant="h6"
                 className="p-1 text-primary text-[15px]"
             >
                 <a href="#reviews" className="flex items-center">

@@ -34,13 +34,13 @@ export default function RepairCounts() {
           className="w-full h-full container flex flex-col md:flex-row text-white justify-between gap-10 items-center"
         >
           {/* Computers Repair Count */}
-          <div className="items-center justify-center w-full flex rounded-full flex-col h-1/3 hover:scale-110 cursor-pointer transition delay-75 duration-100">
+          <div className="items-center justify-center w-full flex flex-col h-1/3 hover:scale-110 cursor-pointer transition delay-75 duration-100">
             <div className="w-28 h-28 p-1  flex items-center justify-center rounded-full bg-[#ffffff40] text-white text-[40px] mb-2">200<p className="text-[22px]">+</p></div>
             Computers
           </div>
 
           {/* Another Item Repair Count */}
-          <div className="items-center justify-center w-full flex rounded-full flex-col h-1/3 hover:scale-110 cursor-pointer transition delay-75 duration-100">
+          <div className="items-center justify-center w-full flex flex-col h-1/3 hover:scale-110 cursor-pointer transition delay-75 duration-100">
             <div className="w-28 h-28  p-1 flex items-center justify-center rounded-full bg-[#ffffff40] text-white text-[40px] mb-2">100<p className="text-[22px]">+</p></div>
             Laptops
           </div>

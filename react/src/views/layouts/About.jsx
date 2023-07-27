@@ -20,7 +20,7 @@ export default function About() {
     return (
         <section className="block max-w-7xl mx-auto my-20">
             {/* Main heading */}
-            <Typography variant="h2" className="mb-2 font-black tracking-normal text-[40px] text-center text-primary md:mb-5">About <span className="text-main">Us</span></Typography>
+            <Typography variant="h1" className="mb-2 font-extrabold tracking-normal text-title text-center text-primary md:mb-5">About <span className="text-main">Us</span></Typography>
 
             <div className="block md:flex my-10">
                 {/* Animated image */}
@@ -44,31 +44,37 @@ export default function About() {
                     <Fragment>
                         {/* First Accordion */}
                         <Accordion open={openAcc1}>
-                            <AccordionHeader onClick={handleOpenAcc1}>
+                            <AccordionHeader color="red" onClick={handleOpenAcc1}
+                                className="text-primary text-[28px]">
                                 What is Material Tailwind?
                             </AccordionHeader>
-                            <AccordionBody>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat doloremque voluptatibus nesciunt rem est, similique aspernatur? Aliquid debitis earum esse atque possimus?
+                            <AccordionBody
+                                className="text-primary text-[19px]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
                             </AccordionBody>
                         </Accordion>
 
                         {/* Second Accordion */}
                         <Accordion open={openAcc2}>
-                            <AccordionHeader onClick={handleOpenAcc2}>
-                                How to use Material Tailwind?
+                            <AccordionHeader onClick={handleOpenAcc2}
+                                className="text-primary text-[28px]">
+                                What is Material Tailwind?
                             </AccordionHeader>
-                            <AccordionBody>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat doloremque voluptatibus nesciunt rem est, similique aspernatur? Aliquid debitis earum esse atque possimus?
+                            <AccordionBody
+                                className="text-primary text-[19px]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
                             </AccordionBody>
                         </Accordion>
 
                         {/* Third Accordion */}
-                        <Accordion open={openAcc3}>
-                            <AccordionHeader onClick={handleOpenAcc3}>
-                                What can I do with Material Tailwind?
+                        <Accordion open={openAcc3} className="text-primary">
+                            <AccordionHeader onClick={handleOpenAcc3}
+                                className="text-primary text-[28px]">
+                                What is Material Tailwind?
                             </AccordionHeader>
-                            <AccordionBody>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat doloremque voluptatibus nesciunt rem est, similique aspernatur? Aliquid debitis earum esse atque possimus?
+                            <AccordionBody
+                                className="text-primary text-[19px]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
                             </AccordionBody>
                         </Accordion>
                     </Fragment>

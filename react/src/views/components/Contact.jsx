@@ -15,7 +15,7 @@ export function Contact() {
 
     return (
         <React.Fragment>
-            <Button size="md" color="red" className="bg-white text-main w-full text-[16px] p-4 px-8 mt-2 rounded-xl whitespace-nowrap" onClick={openDrawer}>Contact</Button>
+            <Button size="md" color="red" className="tracking-wide bg-white text-main w-full text-[16px] p-4 px-8 mt-2 rounded-xl whitespace-nowrap" onClick={openDrawer}>Contact</Button>
             <Drawer open={open} onClose={closeDrawer} placement="right">
                 <div className="mb-2 flex items-center justify-between p-4">
                     <Typography className="text-primary" variant="h5">
