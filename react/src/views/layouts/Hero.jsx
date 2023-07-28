@@ -3,7 +3,6 @@ import { Typography, Carousel } from "@material-tailwind/react"
 import { Contact } from "../components/Contact"
 import { TrackRepair } from "../components/TrackRepair"
 import { motion } from "framer-motion"
-import { slideIn } from "../../utils/motion"
 
 
 export default function Hero() {
@@ -12,9 +11,9 @@ export default function Hero() {
         <section className="w-full h-screen bg-hero bg-cover bg-center bg-no-repeat flex items-center">
             <div className="flex md max-w-7xl w-full h-full items-center px-5 gap-5 md:pb-56 mx-auto">
 
-                <motion.div 
-                 variants={slideIn('left', "tween", 0.2, 1)}  
-                className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center px-5 h-full">
+                <div
+                   
+                    className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center px-5 h-full">
                     <motion.a
                         href="#"
                         animate={{
@@ -25,13 +24,9 @@ export default function Hero() {
                             repeat: Infinity,
                             repeatType: "loop",
                         }}
-                        className="block fixed z-50 justify-center items-center text-center right-0 md:right-8 bottom-8"
-                    >
-                        <img
-                            src="./src/assets/img/screwdriver.png"
-                            alt="about"
-                            className="img-fluid h-[80px] w-[90px] hover:scale-110 cursor-pointer object-cover my-2" />
-                        <small>scroll to top</small>
+                        className="tracking-wide flex fixed z-50 justify-center p-1 items-center text-center backdrop-blur-sm bg-primary/20 h-16 w-16 rounded-full right-0 md:right-5 bottom-5 text-xs"
+                    > 
+                        Scroll to Top
                     </motion.a>
 
                     <Fragment>
@@ -47,12 +42,15 @@ export default function Hero() {
                             <Contact />
                         </div>
                     </Fragment>
-                </motion.div>
+                </div>
 
 
-                <motion.div 
-                 variants={slideIn('right', "tween", 0.2, 1)}
-                className="w-full shadow-md md:w-1/2 relative z-30 bg-white hidden lg:flex rounded-xl justify-center items-center lg:px-10 p-3 my-16 md:mx-auto h-[420px]">
+                <motion.div
+                     key="div"
+                    initial={{ x: 100, opacity: 0 ,scale: 1.2 }}
+                    whileInView={{ x: 0, opacity: 1, scale: 1}}
+                    transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+                    className="w-full shadow-md md:w-1/2 relative z-30 bg-white hidden lg:flex rounded-xl justify-center items-center lg:px-10 p-3 my-16 md:mx-auto h-[420px]">
 
                     <Carousel
                         autoplay={true}

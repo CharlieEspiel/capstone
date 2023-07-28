@@ -1,11 +1,16 @@
 // @material-tailwind/react components
 import { Typography, Button, Input } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 export default function Subscribe() {
     return (
-        <div
-            className="z-90 relative bg-subscribe bg-center bg-cover bg-no-repeat mx-auto md:-mt-40 mb-20 w-4/5 rounded-xl md:w-3/5"
-        >
+
+        <motion.div
+            key="div"
+            initial={{ y: -50, opacity: 0, scale: 1.5 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+            className="z-90 relative bg-subscribe bg-center bg-cover bg-no-repeat mx-auto md:-mt-40 mb-20 w-4/5 rounded-xl md:w-3/5">
             <div className="flex flex-wrap items-center p-5 md:p-10">
                 <div className="w-full px-4 lg:w-6/12">
                     <Typography
@@ -45,7 +50,7 @@ export default function Subscribe() {
                             />
                         </div>
                         <Button
-                        color="red"
+                            color="red"
                             type="submit"
                             name="subscribe"
                             id="mc-embedded-subscribe"
@@ -56,6 +61,6 @@ export default function Subscribe() {
                     </form>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

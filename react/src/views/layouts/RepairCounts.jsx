@@ -8,9 +8,9 @@ export default function RepairCounts() {
     <AnimatePresence>
       <motion.div
         key="div"
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        initial={{ y: -50, opacity: 0, scale: 1.5 }}
+        whileInView={{ y: 0, opacity: 1 , scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
         className="w-4/5 lg:w-3/5 block item-center mx-auto shadow-md bg-stats bg-center bg-cover p-5 space-y-5 h-max  items-center relative  md:my-24 rounded-xl z-40"
       >
         {/* Title */}
