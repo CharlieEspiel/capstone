@@ -11,9 +11,53 @@
     scroll-behavior: smooth;
 }
 
-
 :root {
     background-color: #f5f5f5;
     --primary-color: #cf0029;
     --main-color: #7b000b;
+}
+
+.bg {
+    animation: animate 6s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+        background: #7b000b;
+    }
+    25% {
+        transform: scaleX(1);
+        transform-origin: left;
+        background: #7b000b;
+    }
+    25.001% {
+        transform: scaleX(1);
+        transform-origin: right;
+        background: #7b000b;
+    }
+    50% {
+        transform: scaleX(0);
+        transform-origin: right;
+        background: #7b000b;
+    }
+    50.001% {
+        background: #cf0029c6;
+    }
+    75% {
+        transform: scaleX(1);
+        transform-origin: right;
+        background: #cf0029c6;
+    }
+    75% {
+        transform: scaleX(1);
+        transform-origin: left;
+        background: #cf0029c6;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: left;
+        background: #cf0029c6;
+    }
 }

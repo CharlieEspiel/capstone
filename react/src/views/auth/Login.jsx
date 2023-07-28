@@ -1,9 +1,9 @@
-import React from 'react';
 
 const Login = () => {
     return (
-        <div className="w-full h-screen bg-red m-0 p-0 mx-auto">
-            <div className='w-[400px] mx-auto h-[300px] my-10 rounded-lg bg-blue-gray-400 p-5 py-10'>
+        <div className="relative w-full h-screen bg-[#111827] flex flex-col items-center justify-center">
+        <h1 className="text-white text-3xl">LOGO</h1>
+            <div className='w-[450px] mx-auto h-max m-10 rounded-lg bg-[#1F2937]  text-white p-6 py-4'>
                 {/* Session Status */}
 
                 <form method="POST" action="/login"> {/* Make sure to replace the correct action URL */}
@@ -11,11 +11,11 @@ const Login = () => {
                     <input type="hidden" name="_token" value={window.csrf_token} /> {/* Replace 'csrf_token' with the actual token value or use proper method to fetch the CSRF token */}
 
                     {/* Email Address */}
-                    <div>
+                    <div className="text">
                         <label htmlFor="email">Email</label>
                         <input
                             id="email"
-                            className="block mt-1 w-full"
+                            className="block mt-2 w-full text-gray-900 p-2 rounded "
                             type="email"
                             name="email"
                             required
@@ -30,7 +30,7 @@ const Login = () => {
                         <label htmlFor="password">Password</label>
                         <input
                             id="password"
-                            className="block mt-1 w-full"
+                            className="block mt-2 w-full text-gray-900 p-2 rounded "
                             type="password"
                             name="password"
                             required
@@ -45,7 +45,7 @@ const Login = () => {
                             <input
                                 id="remember_me"
                                 type="checkbox"
-                                className="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800"
+                                className=" dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800"
                                 name="remember"
                             />
                             <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">
@@ -54,7 +54,7 @@ const Login = () => {
                         </label>
                     </div>
 
-                    <div className="flex items-center justify-end mt-4">
+                    <div className="flex items-center justify-end mt-4 gap-3">
                         {/* Replace the 'route' function with the appropriate URL for password reset */}
                         <a
                             href="/password/reset"
@@ -63,8 +63,8 @@ const Login = () => {
                             Forgot your password?
                         </a>
 
-                        <button className="ml-3" type="submit">
-                            Log in
+                        <button className="py-2 px-3 rounded bg-white text-gray-700 font-semibold text-xs leading-3 tracking-wide" type="submit">
+                            LOG IN
                         </button>
                     </div>
                 </form>
