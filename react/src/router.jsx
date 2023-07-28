@@ -3,6 +3,7 @@ import App from "./App";
 import Login from "./views/auth/Login";
 import AdminPage from "./views/AdminPage";
 import SignupPage from "./views/SignupPage";
+import TrackPage from "./views/TrackPage";
 
 //import ErrorPage from "./views/layouts/ErrPage";
 
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <AdminPage />,
     },
+    {
+        path: "/track",
+        element: <TrackPage />,
+    },
+
     // {
     //     path: "*",
     //     element: <ErrorPage />,

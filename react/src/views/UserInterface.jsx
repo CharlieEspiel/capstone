@@ -9,7 +9,6 @@ import Header from "./layouts/Header";
 import { Card } from "@material-tailwind/react";
 import { AnimatePresence } from "framer-motion";
 
-
 export default function UserInterface() {
     return (
         <>
@@ -29,7 +28,6 @@ export default function UserInterface() {
                             <Services />
                             <Reviews />
                         </div>
-
                     </Card>
                     <Footer />
                 </div>

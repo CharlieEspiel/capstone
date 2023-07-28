@@ -36,7 +36,12 @@ const Login = () => {
         <div className="relative w-full h-screen bg-[#111827] flex flex-col items-center justify-center">
             <h1 className="text-white text-3xl">LOGO</h1>
             <div className="w-[450px] mx-auto h-max m-10 rounded-lg bg-[#1F2937]  text-white p-6 py-4">
-                {/* Session Status */}
+                {error.__html && (
+                    <div
+                        className="bg-red-500 rounded py-2 px-3 text-white"
+                        dangerouslySetInnerHTML={error}
+                    ></div>
+                )}
 
                 <form onSubmit={onSubmit} method="POST" action="/login">
                     {" "}
