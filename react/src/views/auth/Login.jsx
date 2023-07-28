@@ -1,15 +1,53 @@
+import { useState } from "react";
+import axiosClient from "../../axios";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 const Login = () => {
+    const { setCurrentUser, setUserToken } = useStateContext();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState({ __html: "" });
+
+    const onSubmit = (ev) => {
+        ev.preventDefault();
+        setError({ __html: "" });
+
+        axiosClient
+            .post("/login", {
+                email,
+                password,
+            })
+            .then(({ data }) => {
+                setCurrentUser(data.user);
+                setUserToken(data.token);
+            })
+            .catch((error) => {
+                if (error.response) {
+                    const finalErrors = Object.values(
+                        error.response.data.errors
+                    ).reduce((accum, next) => [...accum, ...next], []);
+                    setError({ __html: finalErrors.join("<br>") });
+                }
+                console.error(error);
+            });
+    };
+
     return (
         <div className="relative w-full h-screen bg-[#111827] flex flex-col items-center justify-center">
-        <h1 className="text-white text-3xl">LOGO</h1>
-            <div className='w-[450px] mx-auto h-max m-10 rounded-lg bg-[#1F2937]  text-white p-6 py-4'>
+            <h1 className="text-white text-3xl">LOGO</h1>
+            <div className="w-[450px] mx-auto h-max m-10 rounded-lg bg-[#1F2937]  text-white p-6 py-4">
                 {/* Session Status */}
 
-                <form method="POST" action="/login"> {/* Make sure to replace the correct action URL */}
+                <form onSubmit={onSubmit} method="POST" action="/login">
+                    {" "}
+                    {/* Make sure to replace the correct action URL */}
                     {/* CSRF Token */}
-                    <input type="hidden" name="_token" value={window.csrf_token} /> {/* Replace 'csrf_token' with the actual token value or use proper method to fetch the CSRF token */}
-
+                    <input
+                        type="hidden"
+                        name="_token"
+                        value={window.csrf_token}
+                    />{" "}
+                    {/* Replace 'csrf_token' with the actual token value or use proper method to fetch the CSRF token */}
                     {/* Email Address */}
                     <div className="text">
                         <label htmlFor="email">Email</label>
@@ -18,13 +56,14 @@ const Login = () => {
                             className="block mt-2 w-full text-gray-900 p-2 rounded "
                             type="email"
                             name="email"
+                            value={email}
+                            onChange={(ev) => setEmail(ev.target.value)}
                             required
                             autoFocus
                             autoComplete="username"
                         />
                         {/* Display errors here if any */}
                     </div>
-
                     {/* Password */}
                     <div className="mt-4">
                         <label htmlFor="password">Password</label>
@@ -33,15 +72,19 @@ const Login = () => {
                             className="block mt-2 w-full text-gray-900 p-2 rounded "
                             type="password"
                             name="password"
+                            value={password}
+                            onChange={(ev) => setPassword(ev.target.value)}
                             required
                             autoComplete="current-password"
                         />
                         {/* Display errors here if any */}
                     </div>
-
                     {/* Remember Me */}
                     <div className="block mt-4">
-                        <label htmlFor="remember_me" className="inline-flex items-center">
+                        <label
+                            htmlFor="remember_me"
+                            className="inline-flex items-center"
+                        >
                             <input
                                 id="remember_me"
                                 type="checkbox"
@@ -53,7 +96,6 @@ const Login = () => {
                             </span>
                         </label>
                     </div>
-
                     <div className="flex items-center justify-end mt-4 gap-3">
                         {/* Replace the 'route' function with the appropriate URL for password reset */}
                         <a
@@ -63,7 +105,10 @@ const Login = () => {
                             Forgot your password?
                         </a>
 
-                        <button className="py-2 px-3 rounded bg-white text-gray-700 font-semibold text-xs leading-3 tracking-wide" type="submit">
+                        <button
+                            className="py-2 px-3 rounded bg-white text-gray-700 font-semibold text-xs leading-3 tracking-wide"
+                            type="submit"
+                        >
                             LOG IN
                         </button>
                     </div>
