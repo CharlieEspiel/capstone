@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
     Navbar,
     MobileNav,
@@ -70,6 +70,7 @@ export default function Header() {
     );
 
     return (
+
         <Navbar className="top-0 mx-auto h-max max-w-7xl z-50 rounded py-2 px-4 lg:px-8 lg:py-4">
             <div className="flex items-center justify-between">
                 <Typography
