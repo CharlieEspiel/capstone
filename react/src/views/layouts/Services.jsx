@@ -47,62 +47,50 @@ export default function Services() {
                     className="flex flex-wrap items-center justify-center w-full gap-10">
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc1}>
-                            <AccordionHeader onClick={handleOpenAcc1}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc1}>Maintenance and Repairs</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                            Offering comprehensive track maintenance and repair services to ensure the safety
                             </AccordionBody>
                         </Accordion>
                     </Card>
 
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc2}>
-                            <AccordionHeader onClick={handleOpenAcc2}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc2}> Inspection and Assessment</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                            Conducting regular inspections and assessments of tracks to identify issues, defects, or potential problems.
                             </AccordionBody>
                         </Accordion>
                     </Card>
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc3}>
-                            <AccordionHeader onClick={handleOpenAcc3}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc3}>Predictive Maintenance Solutions</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                            Implementing data-driven solutions for predictive maintenance to prevent track failures.
                             </AccordionBody>
                         </Accordion>
                     </Card>
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc4}>
-                            <AccordionHeader onClick={handleOpenAcc4}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc4}>Track Monitoring Systems</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                                Providing advanced track monitoring systems with sensors and analytics to monitor track conditions in real-time.
                             </AccordionBody>
                         </Accordion>
                     </Card>
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc5}>
-                            <AccordionHeader onClick={handleOpenAcc5}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc5}>Asset Management</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                            Managing track assets, maintenance histories, and inspection schedules to optimize asset performance
                             </AccordionBody>
                         </Accordion>
                     </Card>
                     <Card className="md:w-[45%] p-5">
                         <Accordion open={openAcc6}>
-                            <AccordionHeader onClick={handleOpenAcc6}>What is Material Tailwind?</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc6}>What is Work Order Management</AccordionHeader>
                             <AccordionBody>
-                                We&apos;re not always in the position that we want to be at. We&apos;re constantly
-                                growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-                                ourselves and actualize our dreams.
+                            Streamlining work order processes, assigning tasks, and tracking repairs efficiently.
                             </AccordionBody>
                         </Accordion>
                     </Card>

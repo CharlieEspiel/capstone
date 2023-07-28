@@ -58,11 +58,11 @@ export default function About() {
                             <Accordion open={openAcc1}>
                                 <AccordionHeader color="red" onClick={handleOpenAcc1}
                                     className="text-primary text-[28px]">
-                                    What is Material Tailwind?
+                                    What is Track Repair System?
                                 </AccordionHeader>
                                 <AccordionBody
                                     className="text-primary text-[19px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
+                                    A "Track Repair System" is a software platform designed to manage and optimize the maintenance and repair of railway tracks and other track-based infrastructure. It uses data analytics, automation, and predictive maintenance to improve efficiency and safety.
                                 </AccordionBody>
                             </Accordion>
 
@@ -70,11 +70,11 @@ export default function About() {
                             <Accordion open={openAcc2}>
                                 <AccordionHeader onClick={handleOpenAcc2}
                                     className="text-primary text-[28px]">
-                                    What is Material Tailwind?
+                                    How to use Track Repair System?
                                 </AccordionHeader>
                                 <AccordionBody
                                     className="text-primary text-[19px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
+                                    A "Track Repair System" is used by railway operators, metro systems, transit authorities, and infrastructure maintenance companies to optimize track maintenance, enhance safety, and improve overall efficiency.
                                 </AccordionBody>
                             </Accordion>
 
@@ -82,11 +82,19 @@ export default function About() {
                             <Accordion open={openAcc3} className="text-primary">
                                 <AccordionHeader onClick={handleOpenAcc3}
                                     className="text-primary text-[28px]">
-                                    What is Material Tailwind?
+                                    What can I do with Track Repair System?
                                 </AccordionHeader>
                                 <AccordionBody
                                     className="text-primary text-[19px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint placeat veritatis vel illo, repudiandae molestias. Placeat
+                                    Monitor tracks in real-time, 
+                                    Implement predictive maintenance,
+                                    Automate work orders,
+                                    Optimize resource allocation,
+                                    Manage track assets efficiently,
+                                    Access the system via mobile devices,
+                                    Generate data reports and insights,
+                                    Enhance safety and efficiency,
+                                    Extend track lifespan.
                                 </AccordionBody>
                             </Accordion>
                         </Fragment>
