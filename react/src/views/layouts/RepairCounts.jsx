@@ -11,7 +11,7 @@ export default function RepairCounts() {
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="w-4/5 lg:w-3/5 block item-center mx-auto shadow-md bg-stats bg-center bg-cover p-5 space-y-5 h-max  items-center relative  md:my-24 rounded-3xl z-40"
+        className="w-4/5 lg:w-3/5 block item-center mx-auto shadow-md bg-stats bg-center bg-cover p-5 space-y-5 h-max  items-center relative  md:my-24 rounded-xl z-40"
       >
         {/* Title */}
         <Typography

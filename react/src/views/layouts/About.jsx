@@ -5,6 +5,8 @@ import {
     Accordion,
     AccordionHeader,
     AccordionBody,
+    Card,
+    CardHeader
 } from "@material-tailwind/react";
 
 // About Us section with animated image and expandable accordions
@@ -35,8 +37,11 @@ export default function About() {
                     }}
                     className="relative md:w-1/3 flex justify-center items-center p-5"
                 >
-                    <img src="./src/assets/img/about.png" alt="about"
-                        className="img-fluid h-[280px] w-[280px] hover:scale-105 cursor-pointer transition delay-75 duration-100  object-cover object-center rounded-xl shadow-md" />
+                    <Card className="group relative grid w-[15rem] h-[15rem] items-center justify-center overflow-hidden cursor-pointer">
+                        <CardHeader className="absolute w-full h-full inset-0 m-0">
+                            <img src="./src/assets/img/about.png" alt="about" className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500" />
+                        </CardHeader>
+                    </Card>
                 </motion.div>
 
                 {/* Accordions with expandable content */}

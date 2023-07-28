@@ -3,44 +3,36 @@ import { Typography, Carousel } from "@material-tailwind/react"
 import { Contact } from "../components/Contact"
 import { TrackRepair } from "../components/TrackRepair"
 import { motion } from "framer-motion"
+import { slideIn } from "../../utils/motion"
+
 
 export default function Hero() {
     return (
 
         <section className="w-full h-screen bg-hero bg-cover bg-center bg-no-repeat flex items-center">
             <div className="flex md max-w-7xl w-full h-full items-center px-5 gap-5 md:pb-56 mx-auto">
-                <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center px-5 h-full">
-                    <motion.div
-                        animate={{
-                            x: [0, 5, 0],
-                            y: [0, 5, 0],
-                            
-                        }}
-                        transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            repeatType: "loop",
-                        }}
-                        className="hidden absolute z-10 lg:flex justify-center items-center left-5 top-16 p-5"
-                    >
-                        <img src="./src/assets/img/time.png" alt="about"
-                            className="img-fluid h-[200px] w-[200px] hover:scale-105 cursor-pointer object-cover" />
-                    </motion.div>
-                    <motion.div
+
+                <motion.div 
+                 variants={slideIn('left', "tween", 0.2, 1)}  
+                className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center px-5 h-full">
+                    <motion.a
+                        href="#"
                         animate={{
                             y: [0, 10, 0],
-                            x: [0, 10, 0],
                         }}
                         transition={{
                             duration: 1.5,
                             repeat: Infinity,
                             repeatType: "loop",
                         }}
-                        className="hidden lg:flex absolute z-50 justify-center items-center right-5 top-10 md:top-80  p-5"
+                        className="block fixed z-50 justify-center items-center text-center right-0 md:right-8 bottom-8"
                     >
-                        <img src="./src/assets/img/screwdriver.png" alt="about"
-                            className="img-fluid h-[200px] w-[200px] hover:scale-105 cursor-pointer object-cover" />
-                    </motion.div>
+                        <img
+                            src="./src/assets/img/screwdriver.png"
+                            alt="about"
+                            className="img-fluid h-[80px] w-[90px] hover:scale-110 cursor-pointer object-cover my-2" />
+                        <small>scroll to top</small>
+                    </motion.a>
 
                     <Fragment>
                         <Typography
@@ -55,10 +47,12 @@ export default function Hero() {
                             <Contact />
                         </div>
                     </Fragment>
-                </div>
+                </motion.div>
 
 
-                <div className="w-full shadow-md md:w-1/2 relative z-30 bg-white hidden lg:flex rounded-xl justify-center items-center lg:px-10 p-3 my-16 md:mx-auto h-[420px]">
+                <motion.div 
+                 variants={slideIn('right', "tween", 0.2, 1)}
+                className="w-full shadow-md md:w-1/2 relative z-30 bg-white hidden lg:flex rounded-xl justify-center items-center lg:px-10 p-3 my-16 md:mx-auto h-[420px]">
 
                     <Carousel
                         autoplay={true}
@@ -86,7 +80,7 @@ export default function Hero() {
                         />
                     </Carousel>
 
-                </div>
+                </motion.div>
             </div>
         </section>
     )
