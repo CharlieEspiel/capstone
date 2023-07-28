@@ -47,7 +47,10 @@ export default function Branches() {
                                     Manila City
                                 </h1>
                                 <p className="mb-4 text-white italic opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum assumenda quas nam odit, maxime velit expedita porro
+                                Address: Brgy. San Roque, Manila, Metro Manila, Philippines.
+                                Phone: +639194159988 <br></br>
+                                Email: trsmanila@gmail.com<br></br>
+                                Operating Hours: 9am - 6pm
                                 </p>
                             </div>
                         </CardBody>
@@ -64,7 +67,10 @@ export default function Branches() {
                                     Quezon City
                                 </h1>
                                 <p className="mb-4 text-white italic opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum assumenda quas nam odit, maxime velit expedita porro
+                                Address: Brgy. Holy Spirit, Quezon City,Philippines.<br></br>
+                                Phone: +639164142283 <br></br>
+                                Email: trsqc@gmail.com<br></br>
+                                Operating Hours: 9am - 6pm
                                 </p>
                             </div>
                         </CardBody>
@@ -81,7 +87,10 @@ export default function Branches() {
                                     Davao City
                                 </h1>
                                 <p className="mb-4 text-white italic opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum assumenda quas nam odit, maxime velit expedita porro
+                                Address: Talisay, Davao City, Philippines.<br></br>
+                                    Phone: +639215611784 <br></br>
+                                    Email: trsdavao@gmail.com<br></br>
+                                    Operating Hours: 9am - 6pm
                                 </p>
                             </div>
                         </CardBody>
