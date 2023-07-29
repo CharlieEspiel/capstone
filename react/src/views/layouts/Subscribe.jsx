@@ -21,7 +21,7 @@ export default function Subscribe() {
                         Sign up for our newsletter
                     </Typography>
                     <Typography color="white" className="opacity-80">
-                        Join our newsletter and get speacial offers in your inbox every week! We hate
+                        Join our newsletter and get special offers in your inbox every week! We hate
                         spam too, so no worries about this.
                     </Typography>
                 </div>
