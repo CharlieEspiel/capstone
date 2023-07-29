@@ -33,7 +33,7 @@ export default function Hero() {
                         <Typography
                             as="span"
                             variant="h1"
-                            className="w-full inline-block text-start font-extrabold text-main"><span className="text-primary">Track Repair</span><br />System</Typography>
+                            className="w-full inline-block text-start font-extrabold text-main"><span className="text-primary">Repair</span> TrackR</Typography>
                         <Typography variant="lead" className="text-primary text-[22px]">
                             Your go-to solution for hassle-free repair monitoring. Keep tabs on your items' progress and stay informed at every step of the way.
                         </Typography>
@@ -46,7 +46,6 @@ export default function Hero() {
 
 
                 <motion.div
-                     key="div"
                     initial={{ x: 100, opacity: 0 ,scale: 1.2 }}
                     whileInView={{ x: 0, opacity: 1, scale: 1}}
                     transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}

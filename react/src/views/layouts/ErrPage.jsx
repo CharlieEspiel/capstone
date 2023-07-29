@@ -1,6 +1,5 @@
 import React from "react";
-import "./ErrPage.css"; // Make sure to place your CSS file in the same folder as this component
-
+import "./ErrPage.css";
 const ErrorPage = () => {
     return (
         <div id="error-page">

@@ -34,7 +34,7 @@ const Login = () => {
 
     return (
         <div className="relative w-full h-screen bg-[#111827] flex flex-col items-center justify-center">
-            <h1 className="text-white text-3xl">LOGO</h1>
+            <img src="./src/assets/white-logo.png" alt="logo" className="img-fluid h-16" />
             <div className="w-[450px] mx-auto h-max m-10 rounded-lg bg-[#1F2937]  text-white p-6 py-4">
                 {error.__html && (
                     <div

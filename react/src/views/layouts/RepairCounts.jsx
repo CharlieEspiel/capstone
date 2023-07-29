@@ -5,9 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // Animated dashboard displaying repair counts for Computers
 export default function RepairCounts() {
   return (
-    <AnimatePresence>
       <motion.div
-        key="div"
         initial={{ y: -50, opacity: 0, scale: 1.5 }}
         whileInView={{ y: 0, opacity: 1 , scale: 1 }}
         transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
@@ -53,6 +51,5 @@ export default function RepairCounts() {
           </div>
         </motion.div>
       </motion.div>
-    </AnimatePresence>
   );
 }

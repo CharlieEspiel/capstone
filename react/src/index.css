@@ -17,6 +17,9 @@
     --main-color: #7b000b;
 }
 
+
+
+/* Loader Animation Starts */
 .bg {
     animation: animate 6s ease-in-out infinite;
 }
@@ -61,3 +64,5 @@
         background: #cf0029c6;
     }
 }
+/* Loader Animation End */
+
