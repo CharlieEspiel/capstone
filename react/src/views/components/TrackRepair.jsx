@@ -5,6 +5,7 @@ import {
     DialogHeader,
     DialogBody,
     DialogFooter,
+    Input,
 } from "@material-tailwind/react";
 
 export function TrackRepair() {
@@ -14,16 +15,19 @@ export function TrackRepair() {
 
     return (
         <>
-            <Button size="md" color="red" className="bg-main text-white w-full text-[16px] p-4 px-8 mt-2 rounded-xl whitespace-nowrap" onClick={handleOpen} >
-            Track Repair</Button>
+            <Button
+                size="md"
+                color="red"
+                className="bg-main text-white w-full text-[16px] p-4 px-8 mt-2 rounded-xl whitespace-nowrap"
+                onClick={handleOpen}
+            >
+                Track Repair
+            </Button>
 
             <Dialog open={open} handler={handleOpen}>
-                <DialogHeader>Its a simple dialog.</DialogHeader>
+                <DialogHeader>Enter your Repair Ticket No.</DialogHeader>
                 <DialogBody divider>
-                    The key to more success is to have a lot of pillows. Put it this way,
-                    it took me twenty five years to get these plants, twenty five years of
-                    blood sweat and tears, and I&apos;m never giving up, I&apos;m just
-                    getting started. I&apos;m up to something. Fan luv.
+                    <Input label="Enter" />
                 </DialogBody>
                 <DialogFooter>
                     <Button

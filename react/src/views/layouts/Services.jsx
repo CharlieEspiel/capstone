@@ -6,7 +6,7 @@ import {
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 export default function Services() {
@@ -29,10 +29,8 @@ export default function Services() {
 
 
     return (
-        <AnimatePresence>
-            <section id="services" className="max-w-7xl mx-auto flex flex-col p-3 py-20 h-full bg-services bg-cover bg-center bg-no-repeat">
+            <section id="services" className="max-w-7xl mx-auto flex flex-col p-3 py-10 mb-10 h-full bg-services bg-cover bg-center bg-no-repeat">
                 <motion.p
-                    key="div"
                     initial={{ x: -100, opacity: 0, scale: 0.95 }}
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}>
@@ -40,12 +38,11 @@ export default function Services() {
                     </Typography>
                 </motion.p>
                 <motion.div
-                    key="div"
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                    className="flex flex-wrap items-center justify-center w-full gap-10">
-                    <Card className="md:w-[45%] p-5">
+                    className="flex flex-wrap items-center justify-center w-full gap-10 pb-10">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc1}>
                             <AccordionHeader onClick={handleOpenAcc1}>Maintenance and Repairs</AccordionHeader>
                             <AccordionBody>
@@ -54,7 +51,7 @@ export default function Services() {
                         </Accordion>
                     </Card>
 
-                    <Card className="md:w-[45%] p-5">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc2}>
                             <AccordionHeader onClick={handleOpenAcc2}> Inspection and Assessment</AccordionHeader>
                             <AccordionBody>
@@ -62,7 +59,7 @@ export default function Services() {
                             </AccordionBody>
                         </Accordion>
                     </Card>
-                    <Card className="md:w-[45%] p-5">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc3}>
                             <AccordionHeader onClick={handleOpenAcc3}>Predictive Maintenance Solutions</AccordionHeader>
                             <AccordionBody>
@@ -70,7 +67,7 @@ export default function Services() {
                             </AccordionBody>
                         </Accordion>
                     </Card>
-                    <Card className="md:w-[45%] p-5">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc4}>
                             <AccordionHeader onClick={handleOpenAcc4}>Track Monitoring Systems</AccordionHeader>
                             <AccordionBody>
@@ -78,7 +75,7 @@ export default function Services() {
                             </AccordionBody>
                         </Accordion>
                     </Card>
-                    <Card className="md:w-[45%] p-5">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc5}>
                             <AccordionHeader onClick={handleOpenAcc5}>Asset Management</AccordionHeader>
                             <AccordionBody>
@@ -86,9 +83,9 @@ export default function Services() {
                             </AccordionBody>
                         </Accordion>
                     </Card>
-                    <Card className="md:w-[45%] p-5">
+                    <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc6}>
-                            <AccordionHeader onClick={handleOpenAcc6}>What is Work Order Management</AccordionHeader>
+                            <AccordionHeader onClick={handleOpenAcc6}>Work Order Management</AccordionHeader>
                             <AccordionBody>
                             Streamlining work order processes, assigning tasks, and tracking repairs efficiently.
                             </AccordionBody>
@@ -96,6 +93,5 @@ export default function Services() {
                     </Card>
                 </motion.div>
             </section>
-        </AnimatePresence>
     );
 }

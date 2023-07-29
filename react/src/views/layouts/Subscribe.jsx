@@ -36,6 +36,7 @@ export default function Subscribe() {
                     >
                         <div className="w-full md:w-8/12">
                             <Input
+                            color="red"
                                 type="email"
                                 name="EMAIL"
                                 id="mce-EMAIL"

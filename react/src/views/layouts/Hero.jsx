@@ -12,28 +12,20 @@ export default function Hero() {
             <div className="flex md max-w-7xl w-full h-full items-center px-5 gap-5 md:pb-56 mx-auto">
 
                 <div
-                   
+
                     className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center px-5 h-full">
-                    <motion.a
-                        href="#"
-                        animate={{
-                            y: [0, 10, 0],
-                        }}
-                        transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            repeatType: "loop",
-                        }}
-                        className="tracking-wide flex fixed z-50 justify-center p-1 items-center text-center backdrop-blur-sm bg-primary/20 h-16 w-16 rounded-full right-0 md:right-5 bottom-5 text-xs"
-                    > 
-                        Scroll to Top
-                    </motion.a>
+                    <a href="#"
+
+                        className="tracking-wide flex fixed z-50 justify-center items-center text-center bg-none h-14 w-14 rounded-full backdrop-blur right-0 md:right-5 bottom-5 text-xs"
+                    >
+                        <img src="./src/assets/arrow-up.png" alt="arrow-up" />
+                    </a>
 
                     <Fragment>
                         <Typography
                             as="span"
                             variant="h1"
-                            className="w-full inline-block text-start font-extrabold text-main"><span className="text-primary">Track Repair</span><br />System</Typography>
+                            className="w-full inline-block text-start font-extrabold text-main"><span className="text-primary">Repair</span> TrackR</Typography>
                         <Typography variant="lead" className="text-primary text-[22px]">
                             Your go-to solution for hassle-free repair monitoring. Keep tabs on your items' progress and stay informed at every step of the way.
                         </Typography>
@@ -46,9 +38,8 @@ export default function Hero() {
 
 
                 <motion.div
-                     key="div"
-                    initial={{ x: 100, opacity: 0 ,scale: 1.2 }}
-                    whileInView={{ x: 0, opacity: 1, scale: 1}}
+                    initial={{ x: 100, opacity: 0, scale: 1.2 }}
+                    whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
                     className="w-full shadow-md md:w-1/2 relative z-30 bg-white hidden lg:flex rounded-xl justify-center items-center lg:px-10 p-3 my-16 md:mx-auto h-[420px]">
 
