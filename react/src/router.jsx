@@ -4,6 +4,7 @@ import Login from "./views/auth/Login";
 import AdminPage from "./views/AdminPage";
 import SignupPage from "./views/SignupPage";
 import TrackPage from "./views/TrackPage";
+import ForgotPasswordForm from "./views/auth/forgot-password";
 
 //import ErrorPage from "./views/layouts/ErrPage";
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
         path: "/track",
         element: <TrackPage />,
+    },
+    {
+        path: "/reset",
+        element: <ForgotPasswordForm />,
     },
 
     // {
