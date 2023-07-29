@@ -8,6 +8,7 @@ import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import { Card } from "@material-tailwind/react";
 import { AnimatePresence } from "framer-motion";
+import { Preview } from "./components/PreviewServices";
 
 export default function UserInterface() {
     return (
@@ -22,6 +23,7 @@ export default function UserInterface() {
                         id="about"
                     >
                         <div className="container z-20 mx-auto px-4">
+                            <Preview />
                             <About />
                             <RepairCounts />
                             <Branches />

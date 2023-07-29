@@ -6,7 +6,7 @@ import {
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 export default function Services() {
@@ -38,11 +38,10 @@ export default function Services() {
                     </Typography>
                 </motion.p>
                 <motion.div
-                    key="div"
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                    className="flex flex-wrap items-center justify-center w-full gap-10">
+                    className="flex flex-wrap items-center justify-center w-full gap-10 pb-10">
                     <Card className="md:w-[45%] h-44 p-5">
                         <Accordion open={openAcc1}>
                             <AccordionHeader onClick={handleOpenAcc1}>Maintenance and Repairs</AccordionHeader>

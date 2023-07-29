@@ -71,7 +71,7 @@ export default function Footer() {
                         variant="small"
                         className="mb-4 text-center font-normal text-primary md:mb-0"
                     >
-                        &copy; {currentYear} <a href="https://material-tailwind.com/">Repair Tracking System</a>. All
+                        &copy; {currentYear} <a href="https://material-tailwind.com/">Repair TrackR</a>. All
                         Rights Reserved.
                     </Typography>
                     {/* Social media icons */}
