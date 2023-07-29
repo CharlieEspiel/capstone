@@ -6,6 +6,9 @@ import {
     Typography,
 } from "@material-tailwind/react";
 import { AnimatePresence, motion } from "framer-motion";
+import Manila from "../components/BranchManila";
+import Quezon from "../components/BranchQuezon";
+import Davao from "../components/BranchDavao";
 
 // Define the 'Branches' component
 export default function Branches() {
@@ -40,7 +43,10 @@ export default function Branches() {
                         <CardBody className="py-14 px-6 md:px-12 absolute w-full h-full inset-0 m-0  rounded-none
                             bg-gradient-to-t from-primary/90 via-primary/50 to-black/20
                             group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:via-black/50 duration-300">
-                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[50%] group-hover:translate-y-0 transition-all mx-10 duration-300">
+                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[10%] group-hover:translate-y-[-30%] transition-all mx-10 duration-300">
+                                <div className="opacity-1 group-hover:opacity-0 duration-200 transition-all my-20">
+                                    <Manila />
+                                </div>
                                 <h1 className="mb-6 font-semibold text-white text-3xl leading-[1.5]">
                                     Manila City
                                 </h1>
@@ -53,17 +59,21 @@ export default function Branches() {
                             </div>
                         </CardBody>
                     </Card>
-                    <Card className="group relative grid max-w-[22rem] h-[32rem] w-full items-center justify-center overflow-hidden cursor-pointer duration-300 hover:scale-105">
+                    <Card className="group relative grid max-w-[22rem] h-[32rem] w-full items-center justify-center overflow-hidden cursor-pointer">
                         <CardHeader className="absolute w-full h-full inset-0 m-0">
                             <img src="./src/assets/img/carousel-02.jpg" alt="bg-02" className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500" />
                         </CardHeader>
                         <CardBody className="py-14 px-6 md:px-12 absolute w-full h-full inset-0 m-0  rounded-none
                             bg-gradient-to-t from-primary/90 via-primary/50 to-black/30
                             group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:via-black/50 duration-300 transition-colors">
-                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[50%] group-hover:translate-y-0 transition-all mx-10 duration-300">
+                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[10%] group-hover:translate-y-[-30%] transition-all mx-10 duration-300">
+                                <div className="opacity-1 group-hover:opacity-0 duration-200 transition-all my-20">
+                                    <Quezon />
+                                </div>
                                 <h1 className="mb-6 font-semibold text-white text-3xl leading-[1.5]">
                                     Quezon City
                                 </h1>
+
                                 <p className="mb-4 text-white italic opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                     Address: Brgy. Holy Spirit, Quezon City,Philippines.<br></br>
                                     Phone: +639164142283 <br></br>
@@ -80,7 +90,10 @@ export default function Branches() {
                         <CardBody className="py-14 px-6 md:px-12 absolute w-full h-full inset-0 m-0  rounded-none
                             bg-gradient-to-t from-primary/90 via-primary/50 to-black/20
                             group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:via-black/50  duration-300">
-                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[50%] group-hover:translate-y-0 transition-all mx-10 duration-300">
+                            <div className="absolute inset-0 flex flex-col text-center items-center justify-center translate-y-[10%] group-hover:translate-y-[-30%] transition-all mx-10 duration-300">
+                                <div className="opacity-1 group-hover:opacity-0 duration-200 transition-all my-20">
+                                    <Davao />
+                                </div>
                                 <h1 className="mb-6 font-semibold text-white text-3xl leading-[1.5]">
                                     Davao City
                                 </h1>
